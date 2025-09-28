@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    margin: 10px;
+    padding: 0px;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 10px;
+    border-bottom: 1px solid rgb(142, 139, 139);
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.products .col-2 {
+    width: 20%;
+}
+
+.products .col-10 {
+    width: 80%;
+    margin-left: 10px;
+}
+
+h5 {
+    padding: 10px;
+}
+
+.add_form {
+    border: 1px solid lightslategray;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.add_form .form-group,
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+}
+
+input {
+    padding: 6px;
+    padding-left: 10px;
+    border-radius: 20px;
+    border: 1px solid lightslategray;
+}
+
+button {
+    background-color: rgb(136, 241, 180);
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    margin: 4px 0px;
+}
+
+.edit {
+    background-color: rgb(237, 179, 129);
+    color: white;
+}
+
+.delete {
+    background-color: rgb(232, 124, 124);
+    color: white;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+td,
+th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(108, 193, 143);
+    color: white;
+}
+
+/* --- theme */
+.light_theme {
+    background-color: white;
+    color: black;
+}
+
+.dark_theme {
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width:600px) {
+    .products {
+        flex-direction: column;
+    }
+    .products .col-2 {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.products .col-10 {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 0px;
+}
+}
